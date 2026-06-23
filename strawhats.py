@@ -1,5 +1,5 @@
 def trueorfalse(entrada):
-    if (entrada in {'s', 'sim'}):
+    if (entrada in {'s', 'S', 'sim', 'Sim'}):
         return True
     else:
         return False
