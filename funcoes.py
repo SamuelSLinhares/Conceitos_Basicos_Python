@@ -1,3 +1,5 @@
+from random import randint
+
 def multiprint(frase, x):
     for i in range(x):
         print(frase)
@@ -6,16 +8,14 @@ def multiprint(frase, x):
 def isEven(n):
     if n % 2 == 0:
         print(f'O número {n} é par!')
-        return True
+        ## return True
     else:
         print(f'O número {n} é impar')
-        return False
+        ## return False
     
 def sumandminus(x, y, z):
     res = x + y - z
     return res
-
-from random import randint
 
 n = randint(1, 10)
 x = randint(1, 10)

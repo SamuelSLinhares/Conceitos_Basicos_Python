@@ -12,7 +12,7 @@ print('Qual o jogo anterior a esse?', message.replace('7', '6'))
 
 saudacao = 'Olá'
 nome = 'Samuel'
-print(f'{saudacao}, {nome}. Bem vindo!')
+print(f'{saudacao}, {nome}. Seja bem vindo!')
 
 #mostra os métodos disponíveis para uma variável
 # print(dir(message))
