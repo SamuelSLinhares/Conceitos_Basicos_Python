@@ -7,9 +7,9 @@
 #        print(linha_limpa)
 
 # exemplo prático
-with open("arquivos/notas.txt", "r") as arquivo:
+with open("programas/arquivos/notas.txt", "r") as arquivo:
     soma = 0
-    contado = 0
+    contador = 0
 
     for linha in arquivo:
         temperatura = float(linha.strip())
