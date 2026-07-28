@@ -19,3 +19,5 @@ with open("programas/arquivos/registro_temperaturas.txt", "r") as arquivo:
     if contador > 0:
         media = soma / contador
         print(f'A temperatura média da semana foi/será: {media:.1f}°C')
+
+## o contexto with fecha arquivos automaticamente após o bloco de código ser finalizado

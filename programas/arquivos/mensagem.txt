@@ -1,0 +1,3 @@
+Testando o método Write!
+Quebra de linha deve ser adicionada manualmente!
+Testando o método Append!
