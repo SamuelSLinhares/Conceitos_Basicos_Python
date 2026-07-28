@@ -25,4 +25,6 @@ else:
 finally:
     print('Obrigado por utilizar o programa!')
 
-    
+## except: executa linha a identificar um erro genérico ou específico
+## else: no contexto de try, executa caso nenhum erro seja identificado
+## finally: executa a linha independentemente de erro ou não

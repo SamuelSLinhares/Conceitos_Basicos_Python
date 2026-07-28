@@ -7,7 +7,7 @@
 #        print(linha_limpa)
 
 # exemplo prático
-with open("programas/arquivos/notas.txt", "r") as arquivo:
+with open("programas/arquivos/registro_temperaturas.txt", "r") as arquivo:
     soma = 0
     contador = 0
 
@@ -18,4 +18,4 @@ with open("programas/arquivos/notas.txt", "r") as arquivo:
 
     if contador > 0:
         media = soma / contador
-        print(f'A temperatura média foi: {media:.1f}°C')
+        print(f'A temperatura média da semana foi/será: {media:.1f}°C')
