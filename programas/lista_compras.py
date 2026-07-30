@@ -4,7 +4,7 @@ def mostrar_menu(): ##exibe opções ao usuário
         print("1. Ver lista")
         print("2. Adicionar item(s)")
         print("3. Sair")
-        return int(input("O que você quer fazer? "))
+        return int(input("\nO que você quer fazer? "))
     except ValueError:
         print('O valor inserido não é válido, tente novamente.')
     
