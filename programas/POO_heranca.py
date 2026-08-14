@@ -1,3 +1,6 @@
+from abc import ABC, abstractmethod
+import math
+
 class Veiculo:
     def __init__(self, marca, modelo):
         self.marca = marca
@@ -41,3 +44,43 @@ class Calculadora:
 
 print(Calculadora.somar(10))
 print(Calculadora.somar(10, 20))
+
+##CLASSES ABSTRATAS:
+#Classes que não podem gerar instâncias, apenas terem suas características herdadas
+
+class Forma(ABC): #Herdar de ABC torna a classe abstrata
+    @abstractmethod
+    def area(self): #Define a obrigatoriedade da implementação de area()
+        pass
+
+    def descricao(self): #Podem haver metodos normais também
+        print("Sou uma forma geométrica")
+
+class Quadrado(Forma):
+    def __init__(self, lado):
+        self.lado = lado
+
+    def area(self):
+        return self.lado * self.lado
+
+class Circulo(Forma):
+    def __init__(self, raio):
+        self.raio = raio
+
+    def area(self):
+        return math.pi * (self.raio ** 2)
+
+q = Quadrado(4)
+c = Circulo(3)
+
+print(f'Área Quadrado: {q.area()}')
+print(f'Área Círculo: {c.area():.2f}')
+q.descricao()
+
+##INTERFACES
+#Convenção para definir métodos necessárias dentro de uma classe sem a necessidade de fornecer implementação de código
+#Todos os métodos devem ser abstratos
+
+class IDesenhavel(ABC): #O 'I' no começo é convenção para Interface
+    def desenhar(self):
+        pass
